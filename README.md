@@ -1,7 +1,7 @@
 # TestRestful
 1.  `mix phx.new test_restful`
 
-2. `mix phx.gen.html Accounts User users name:string email:string phone_number:string`
+2. `mix phx.gen.html Accts User1 users1 name:string email:string phone_number:string`
 
 Add the resource to your browser scope in lib/test_restful_web/router.ex:
 

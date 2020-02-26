@@ -2,10 +2,10 @@ defmodule TestRestfulWeb.UserLive.New do
   require Logger
   use Phoenix.LiveView
 
-  alias TestRestfulWeb.UserLive
+  alias TestRestfulWeb.{UserLive,UserView}
   alias TestRestfulWeb.Router.Helpers, as: Routes
   alias TestRestful.Accounts
-  alias TestRestful.Accounts.User
+  alias Accounts.User
 
   def mount(_params, _session, socket) do
     changeset = Accounts.change_user(%User{})
@@ -24,11 +24,11 @@ defmodule TestRestfulWeb.UserLive.New do
   end
 
   def handle_event("save", %{"user" => user_params}, socket) do
-    case Accounts.create_user(user_params) do
+    case TestRestful.Accounts.create_user(user_params) do
       {:ok, user} ->
         {:stop,
           socket
-          |> put_flash(:info, "user created")
+          #|> put_flash(:info, "user created")
           |> redirect(to: Routes.live_path(socket, UserLive.Show, user))}
 
       {:error, %Ecto.Changeset{} = changeset} ->

@@ -98,7 +98,10 @@ defmodule TestRestful.Accounts do
       %Ecto.Changeset{source: %User{}}
 
   """
-  def change_user(%User{} = user) do
-    User.changeset(user, %{})
+  #def change_user(%User{} = user) do
+  #  User.changeset(user, %{})
+  #end
+  def change_user(user, attrs \\ %{}) do
+    User.changeset(user, attrs)
   end
 end

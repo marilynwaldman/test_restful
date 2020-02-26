@@ -31,7 +31,7 @@ defmodule TestRestfulWeb.UserLive.Edit do
   end
 
   def handle_event("save", %{"user" => user_params}, socket) do
-    case Accounts.update_user(socket.assigns.user, user_params) do
+    case TestRestful.Accounts.update_user(socket.assigns.user, user_params) do
       {:ok, user} ->
         {:stop,
           socket

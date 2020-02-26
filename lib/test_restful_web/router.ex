@@ -1,5 +1,6 @@
 defmodule TestRestfulWeb.Router do
   use TestRestfulWeb, :router
+  import Phoenix.LiveView.Router
 
   #pipeline :browser do
   #plug :accepts, ["html"]

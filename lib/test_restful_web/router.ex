@@ -16,8 +16,10 @@ defmodule TestRestfulWeb.Router do
   scope "/", TestRestfulWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+
     resources "/users", UserController
+
+    live("/", CounterLive)
 
   end
 

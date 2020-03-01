@@ -4,9 +4,13 @@ defmodule TestRestfulWeb.UserLive.Index do
   alias TestRestful.Accounts
   alias TestRestfulWeb.UserView
 
-  def mount(_session, socket) do
+  #def mount(_session, socket) do
+   # {:ok, fetch(socket)}
+ # end
+
+  def mount(_params, _session, socket) do
     {:ok, fetch(socket)}
-  end
+    end
 
   def render(assigns), do: UserView.render("index.html", assigns)
 

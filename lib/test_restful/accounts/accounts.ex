@@ -8,6 +8,16 @@ defmodule TestRestful.Accounts do
 
   alias TestRestful.Accounts.User
 
+  @topic inspect(__MODULE__)
+
+  def subscribe do
+    Phoenix.PubSub.subscribe(TestRestful.PubSub, @topic)
+  end
+
+  def subscribe(user_id) do
+    Phoenix.PubSub.subscribe(TestRestful.PubSub, @topic <> "#{user_id}")
+  end
+
   @doc """
   Returns the list of users.
 
@@ -53,6 +63,7 @@ defmodule TestRestful.Accounts do
     %User{}
     |> User.changeset(attrs)
     |> Repo.insert()
+    |> notify_subscribers([:user, :created])
   end
 
   @doc """
@@ -71,6 +82,7 @@ defmodule TestRestful.Accounts do
     user
     |> User.changeset(attrs)
     |> Repo.update()
+    |> notify_subscribers([:user, :updated])
   end
 
   @doc """
@@ -88,6 +100,7 @@ defmodule TestRestful.Accounts do
   def delete_user(%User{} = user, attrs \\ %{}) do
     user
     |> Repo.delete()
+    |> notify_subscribers([:user, :deleted])
   end
 
   @doc """
@@ -105,4 +118,12 @@ defmodule TestRestful.Accounts do
   def change_user(user, attrs \\ %{}) do
     User.changeset(user, attrs)
   end
+
+  defp notify_subscribers({:ok, result}, event) do
+    Phoenix.PubSub.broadcast(TestRestful.PubSub, @topic, {__MODULE__, event, result})
+    Phoenix.PubSub.broadcast(TestRestful.PubSub, @topic <> "#{result.id}", {__MODULE__, event, result})
+    {:ok, result}
+  end
+
+  defp notify_subscribers({:error, reason}, _event), do: {:error, reason}
 end

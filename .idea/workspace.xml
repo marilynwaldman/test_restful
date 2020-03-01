@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6dac35ae-97bb-419e-9492-04fdb1c381bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_restful/accounts.ex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_restful_web.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/live/user/edit.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/live/user/edit.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test_restful/accounts/accounts.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful/accounts/accounts.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/live/user/index.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/live/user/index.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/test_restful_web/live/user/new.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/live/user/new.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/router.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/templates/user/index.html.leex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/templates/user/index.html.leex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

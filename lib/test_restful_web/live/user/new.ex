@@ -28,7 +28,7 @@ defmodule TestRestfulWeb.UserLive.New do
       {:ok, user} ->
         {:stop,
           socket
-          #|> put_flash(:info, "user created")
+          |> put_flash(:info, "user created")
           |> redirect(to: Routes.live_path(socket, UserLive.Show, user))}
 
       {:error, %Ecto.Changeset{} = changeset} ->

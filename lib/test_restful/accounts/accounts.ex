@@ -85,8 +85,9 @@ defmodule TestRestful.Accounts do
       {:error, %Ecto.Changeset{}}
 
   """
-  def delete_user(%User{} = user) do
-    Repo.delete(user)
+  def delete_user(%User{} = user, attrs \\ %{}) do
+    user
+    |> Repo.delete()
   end
 
   @doc """

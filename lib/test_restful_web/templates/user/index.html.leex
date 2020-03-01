@@ -20,10 +20,11 @@
       <<td>
                <%= link "Show", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Show, user.id) %>
                <%= link "Edit", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Edit, user.id) %>
-               <%= link "Delete", to: '#',
-                           phx_click: "delete_user",
-                           phx_value: user.id,
-                           data: [confirm: "Are you sure?"] %>
+
+               <%= link "Delete", to: "#",
+                    phx_click: "delete_user",
+                    phx_value_id: user.id %>
+
 
       </td>
     </tr>

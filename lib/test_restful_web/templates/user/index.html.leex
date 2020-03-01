@@ -1,0 +1,35 @@
+<h1>Listing Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone number</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user <- @users do %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.phone_number %></td>
+
+      <<td>
+               <%= link "Show", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Show, user.id) %>
+               <%= link "Edit", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Edit, user.id) %>
+
+               <%= link "Delete", to: "#",
+                    phx_click: "delete_user",
+                    phx_value_id: user.id %>
+
+
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New User", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.New) %></span>

@@ -1,0 +1,6 @@
+<h2>Edit User <%= @count %></h2>
+
+<%= render "form.html", assigns %>
+
+<span><%= link "Back", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Index) %></span>
+

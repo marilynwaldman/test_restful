@@ -5,8 +5,9 @@ defmodule TestRestfulWeb.UserController do
   alias TestRestful.Accounts.User
 
   def index(conn, _params) do
-    users = Accounts.list_users()
-    render(conn, "index.html", users: users)
+    conn
+    |> put_view(TestRestfulWeb.UserIndexView)
+    |> render("index.html")
   end
 
   def new(conn, _params) do

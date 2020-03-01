@@ -24,11 +24,7 @@ defmodule TestRestfulWeb.Router do
 
   scope "/", TestRestfulWeb do
     pipe_through :browser
-<<<<<<< HEAD
 
-
-    resources "/users", UserController
-=======
     live "/", UserLive.Index
     live "/users", UserLive.Index
     live "/users/new", UserLive.New
@@ -36,9 +32,6 @@ defmodule TestRestfulWeb.Router do
     live "/users/:id/edit", UserLive.Edit
     #get "/", PageController, :index
     #resources "/users", UserController
->>>>>>> liveview
-
-    live("/", CounterLive)
 
   end
 

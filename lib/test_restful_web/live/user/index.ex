@@ -9,6 +9,7 @@ defmodule TestRestfulWeb.UserLive.Index do
  # end
 
   def mount(_params, _session, socket) do
+    if connected?(socket) do TestRestful.Accounts.subscribe() end
     {:ok, fetch(socket)}
     end
 

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="31ddfb4c-79ea-4242-94e3-4e8fc7a0b623" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_restful/accounts/accounts.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful/accounts/accounts.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/test_restful_web/live/user/index.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/live/user/index.ex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

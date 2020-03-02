@@ -1,4 +1,6 @@
 # TestRestful
+
+
 1.  `mix phx.new test_restful`
 
 2. `mix phx.gen.html Accts User1 users1 name:string email:string phone_number:string`

@@ -17,7 +17,7 @@
       <td><%= user.email %></td>
       <td><%= user.phone_number %></td>
 
-      <<td>
+      <td>
                <%= link "Show", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Show, user.id) %>
                <%= link "Edit", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Edit, user.id) %>
 

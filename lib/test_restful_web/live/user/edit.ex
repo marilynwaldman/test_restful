@@ -33,7 +33,7 @@ defmodule TestRestfulWeb.UserLive.Edit do
   def handle_event("save", %{"user" => user_params}, socket) do
     case TestRestful.Accounts.update_user(socket.assigns.user, user_params) do
       {:ok, user} ->
-        {:stop,
+        {:noreply,
           socket
           |> put_flash(:info, "User updated successfully.")
           |> redirect(to: Routes.live_path(socket, UserLive.Show, user))}

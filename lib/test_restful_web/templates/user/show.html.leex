@@ -19,5 +19,5 @@
 
 </ul>
 
-<span><%= link "Edit", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Edit, @user) %></span>
-<span><%= link "Back", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Index) %></span>
+<span><%= live_redirect "Edit", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Edit, @user) %></span>
+<span><%= live_redirect "Back", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Index) %></span>

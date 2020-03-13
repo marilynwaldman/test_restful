@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="31ddfb4c-79ea-4242-94e3-4e8fc7a0b623" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/live/user/edit.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/live/user/edit.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/endpoint.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/endpoint.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/templates/user/edit.html.leex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/templates/user/edit.html.leex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test_restful_web/templates/user/index.html.leex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_restful_web/templates/user/index.html.leex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +59,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584124222612">
+      <screen x="0" y="23" width="1280" height="731" />
+    </state>
+    <state x="0" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.731@0.23.1280.731" timestamp="1584124222612" />
+    <state x="200" y="217" width="1080" height="515" key="DiffContextDialog" timestamp="1584134262019">
+      <screen x="0" y="23" width="1280" height="731" />
+    </state>
+    <state x="200" y="217" width="1080" height="515" key="DiffContextDialog/0.23.1280.731@0.23.1280.731" timestamp="1584134262019" />
     <state x="296" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1584048637757">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
     <state x="296" y="222" key="com.intellij.ide.util.TipDialog/0.23.1280.730@0.23.1280.730" timestamp="1584048637757" />
-    <state x="303" y="154" width="673" height="472" key="find.popup" timestamp="1583523396875">
-      <screen x="0" y="23" width="1280" height="735" />
+    <state x="303" y="153" width="673" height="472" key="find.popup" timestamp="1584063967992">
+      <screen x="0" y="23" width="1280" height="731" />
     </state>
+    <state x="303" y="153" width="673" height="472" key="find.popup/0.23.1280.731@0.23.1280.731" timestamp="1584063967992" />
     <state x="303" y="154" width="673" height="472" key="find.popup/0.23.1280.735@0.23.1280.735" timestamp="1583523396875" />
+    <state x="480" y="183" key="run.anything.popup" timestamp="1584056743177">
+      <screen x="0" y="23" width="1280" height="730" />
+    </state>
+    <state x="480" y="183" key="run.anything.popup/0.23.1280.730@0.23.1280.730" timestamp="1584056743177" />
   </component>
 </project>

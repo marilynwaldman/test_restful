@@ -31,6 +31,7 @@ defmodule TestRestfulWeb.Router do
     live "/users/:id", UserLive.Show
     live "/users/:id/edit", UserLive.Edit
     live "/table", TableLive
+    live "/counter", CounterLive
     #get "/", PageController, :index
     #resources "/users", UserController
 

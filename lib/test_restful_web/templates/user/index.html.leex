@@ -18,10 +18,10 @@
       <td><%= user.phone_number %></td>
 
       <td>
-               <%= link "Show", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Show, user.id) %>
-               <%= link "Edit", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Edit, user.id) %>
+               <%= live_redirect "Show", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Show, user.id) %>
+               <%= live_redirect "Edit", to: Routes.live_path(@socket, TestRestfulWeb.UserLive.Edit, user.id) %>
 
-               <%= link "Delete", to: "#",
+               <%= live_redirect "Delete", to: "#",
                     phx_click: "delete_user",
                     phx_value_id: user.id %>
 

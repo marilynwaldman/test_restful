@@ -10,7 +10,6 @@ defmodule TestRestfulWeb.Endpoint do
     signing_salt: "cX1MT33e"
   ]
 
-
   socket "/live", Phoenix.LiveView.Socket,
          websocket: [connect_info: [session: @session_options]]
 

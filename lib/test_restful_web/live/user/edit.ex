@@ -36,7 +36,7 @@ defmodule TestRestfulWeb.UserLive.Edit do
         {:noreply,
           socket
           |> put_flash(:info, "User updated successfully.")
-          |> redirect(to: Routes.live_path(socket, UserLive.Show, user))}
+          |> push_redirect(to: Routes.live_path(socket, UserLive.Show, user))}
 
       {:error, %Ecto.Changeset{} = changeset} ->
         {:noreply, assign(socket, changeset: changeset)}

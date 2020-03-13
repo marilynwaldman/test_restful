@@ -29,7 +29,7 @@ defmodule TestRestfulWeb.UserLive.New do
         {:noreply,
           socket
           |> put_flash(:info, "user created")
-          |> redirect(to: Routes.live_path(socket, UserLive.Show, user))}
+          |> push_redirect(to: Routes.live_path(socket, UserLive.Show, user))}
 
       {:error, %Ecto.Changeset{} = changeset} ->
         Logger.info  "save not ok"
